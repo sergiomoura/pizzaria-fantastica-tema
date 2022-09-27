@@ -9,7 +9,7 @@ main h1 {
 	right: 0;
 	top:50;
 	color: #FFF;
-	background-color: rgb(255, 81, 0);
+	background-color: var(--cor-primaria);
 	padding: 10px 20px;
 	margin: 0;
 }
@@ -33,7 +33,7 @@ main img{
 
 main button{
 	display: block;
-	background-color: rgb(255, 81, 0);
+	background-color: var(--cor-primaria);
 	border: none;
 	color: white;
 	padding: 10px 20px;
@@ -45,7 +45,7 @@ main button{
 }
 
 main button:focus{
-	outline: 3px solid rgb(255, 81, 0);	
+	outline: 3px solid var(--cor-primaria);	
 }
 
 main article:hover button{

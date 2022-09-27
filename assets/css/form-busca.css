@@ -11,7 +11,7 @@
 	min-width: 440px;
 }
 
-#form-busca a {
+#logo {
 	transform: rotate(180deg);
 	width: 64px;
 	height: 64px;
@@ -21,15 +21,50 @@
 	transition: 0.2s ease-in-out;
 }
 
-#form-busca a:hover {
+#logo:hover {
 	transform: rotate(315deg);
 }
 
-#form-busca a img{
+#logo img{
 	width: 52px;
 	height: 52px;
 }
 
+
+#carrinho {
+    display: block;
+	background-color: #000;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	position: relative;
+	border: 1px solid var(--cor-primaria);
+}
+
+#carrinho:hover{
+	text-decoration: none;
+	background-color: var(--cor-primaria);
+}
+
+#carrinho i {
+	
+}
+
+#carrinho span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 12px;
+	left: 21px;
+	color: #000;
+	width: 24px;
+	height: 24px;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
 
 #form-busca input{
 	flex-grow: 1;
@@ -42,7 +77,7 @@
 }
 
 #form-busca input:focus{
-	outline: 3px solid rgb(255, 81, 0);
+	outline: 3px solid var(--cor-primaria);
 	background-color: rgb(255,255,255) ;
 }
 
@@ -51,7 +86,7 @@
 	flex-shrink: 0;
 	width: 25%;
 	font-size: 2rem;
-	background-color: rgb(255, 81, 0);
+	background-color: var(--cor-primaria);
 	color: white;
 	border: none;
 }

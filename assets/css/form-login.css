@@ -59,7 +59,7 @@
 #form-login .controles button{
 	display: block;
 	font-size: 1rem;
-	background-color: rgb(255, 81, 0);
+	background-color: var(--cor-primaria);
 	color: white;
 	border: none;
 	padding: 10px 20px;

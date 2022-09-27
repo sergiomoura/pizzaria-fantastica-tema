@@ -53,7 +53,7 @@
 	font-size: 1.2rem;
 	display: inline-block;
 	padding: 10px 20px;
-	background-color: rgb(255, 81, 0);
+	background-color: var(--cor-primaria);
 	cursor: pointer;
 }
 #list-usuarios main article .controles a:hover{
@@ -73,7 +73,7 @@
 	font-size: 1.5rem;
 	display: inline-block;
 	padding: 10px 20px;
-	background-color: rgb(255, 81, 0);
+	background-color: var(--cor-primaria);
 	margin-bottom: 20px;
 }
 
