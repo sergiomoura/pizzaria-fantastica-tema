@@ -1,3 +1,31 @@
+<?php
+	require('../validadores.php');
+	$nomeOk = true;
+	$emailOk = true;
+	$senhaOk = true;
+	$confOk = true;
+
+	if($_POST){
+
+		echo "<pre>";
+		print_r($_POST);
+		echo "</pre>";
+		
+		// Validar o campo NOME
+		$nome = $_POST['nome'];
+		$nomeOk = validaNome($nome);
+
+		// Se tudo estiver bem, IR ADIANTE!
+		if($nomeOk) {
+			echo("VOU SALVAR AS INFO!!!");
+			die();
+		}
+
+	}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +53,7 @@
         </ul>
     </nav>
 	<link rel="stylesheet" href="../assets/css/form-usuario.css">
-	<form id="form-usuario" method="POST" action="/users" enctype="multipart/form-data">
+	<form id="form-usuario" method="POST" action="" enctype="multipart/form-data">
 		<label>
 			Foto:
 			<img src="../assets/img/no-image.png">
@@ -37,6 +65,7 @@
 			<label>
 				Nome:
 				<input type="text" name="nome" id="nome" placeholder="Digite o nome do usuário">
+				<?= ($nomeOk ? '' : '<span>Insira um nome válido</span>');  ?>
 			</label>
 		
 			<label>

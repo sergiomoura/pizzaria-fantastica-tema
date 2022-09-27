@@ -11,6 +11,26 @@ form {
 	min-width: 440px;
 }
 
+form a {
+	transform: rotate(180deg);
+	width: 64px;
+	height: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s ease-in-out;
+}
+
+form a:hover {
+	transform: rotate(315deg);
+}
+
+form a img{
+	width: 52px;
+	height: 52px;
+}
+
+
 form input{
 	flex-grow: 1;
 	padding: 10px;
