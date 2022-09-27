@@ -41,11 +41,17 @@
 	width: 64px;
 	position: relative;
 	border: 1px solid var(--cor-primaria);
+	color: var(--cor-primaria);
 }
 
 #carrinho:hover{
 	text-decoration: none;
 	background-color: var(--cor-primaria);
+	color: #000;
+}
+
+#carrinho:hover span {
+	color: var(--cor-primaria);
 }
 
 #carrinho i {
