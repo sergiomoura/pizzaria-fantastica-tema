@@ -1,0 +1,41 @@
+#enderecos {
+    margin: 120px auto 0 auto;
+    width: 640px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px;
+}
+
+#enderecos form{
+    display: flex;
+    align-items: center;
+}
+
+#enderecos form label{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#enderecos form input[name='endereco'] {
+    font-size: 1.4rem;
+    padding: 6px;
+    position: relative;
+    top: 2px;
+}
+
+#enderecos form button{
+    width: 120px;
+}
+
+#enderecos table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#enderecos table td {
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+#enderecos table td:nth-child(2){
+    width: 129px;
+}

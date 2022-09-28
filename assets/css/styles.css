@@ -56,7 +56,7 @@ form label input[type="password"] {
 	font-size: 18px;
 }
 
-form button {
+button {
     border: none;
     background-color: var(--cor-principal);
     color: #FFF;

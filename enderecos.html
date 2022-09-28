@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizzaria Fantástica</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/90a414e190.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+<body>
+    <link rel="stylesheet" href="assets/css/enderecos.css">
+	<link rel="stylesheet" href="assets/css/form-busca.css">
+
+	<form action="/busca" method="get" id="form-busca">
+		
+		<a id="logo" href="index.html">
+			<img src="./assets/img/logo.svg" alt="Logo Pizzaria">
+		</a>
+		
+		<input type="text" name="q" placeholder="Qual pizza você procura?" autocomplete="off" value="">
+		
+		<button type="submit">Buscar</button>
+		
+		<a class="form-button" href="carrinho.html">
+			<span>18</span>
+			<i class="fa-solid fa-cart-shopping fa-2xl"></i>
+		</a>
+
+		<div class="menu form-button">
+			<i class="fa-solid fa-user fa-2xl"></i>
+			<ul>
+				<li>
+					<a href="perfil.html">
+						<i class="fa-solid fa-user-pen"></i>
+						<span>Editar Perfil</span>
+					</a>
+				</li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Endereços</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <span>Formas de Pagamento</span>
+                    </a>
+                </li>
+
+				<li>
+					<a href="#">
+						<i class="fa-solid fa-right-from-bracket"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+	</form>
+
+    <main id="enderecos">
+        <form method="post">
+            <label for="endereco">Adicionar Endereço
+                <input type="text" placeholder="Digite o endereço a ser adicionado" name="endereco" id="endereco">
+            </label>
+            <button type="submit">Salvar</button>
+        </form>
+        <table>
+            <tr>
+                <td>Rua das rosas, 45</td>
+                <td>
+                    <button title="excluir">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                    <button title="editar">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Rua das camélias, 55. Casa 44</td>
+                <td>
+                    <button title="excluir">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                    <button title="editar">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                </td>
+            </tr>
+            
+            
+        </table>
+    </main>
+</body>
+</html>
