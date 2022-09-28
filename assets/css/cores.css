@@ -1,3 +1,4 @@
 :root {
     --cor-primaria: rgb(255, 81, 0);
+    --cor-primaria-transparente: rgba(255, 81, 0, 0.5);
 }

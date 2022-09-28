@@ -2,7 +2,7 @@
 	display: flex;
 	position: fixed;
 	z-index: 1;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 10px;
 	top: 0;
 	left: 0;
@@ -23,14 +23,14 @@
 	transform: scale(1.2) rotate(10deg);
 }
 
-#logo img{
+#logo img {
 	width: 52px;
 	height: 52px;
 }
 
 
 .form-button {
-    display: block;
+	display: block;
 	background-color: #000;
 	margin-left: 10px;
 	display: flex;
@@ -40,9 +40,10 @@
 	position: relative;
 	border: 1px solid var(--cor-primaria);
 	color: var(--cor-primaria);
+	flex-shrink: 0;
 }
 
-.form-button:hover{
+.form-button:hover {
 	text-decoration: none;
 	background-color: var(--cor-primaria);
 	color: #000;
@@ -52,7 +53,7 @@
 	color: var(--cor-primaria);
 }
 
-.form-button > span {
+.form-button>span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -71,12 +72,12 @@
 }
 
 
-.menu:hover > ul{
+.menu:hover>ul {
 	height: 160px;
 	transition: height 0.3s ease-out;
 }
 
-.menu > ul {
+.menu>ul {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
@@ -91,13 +92,13 @@
 	overflow: hidden;
 }
 
-.menu > ul > li {
+.menu>ul>li {
 	display: block;
 	width: 100%;
 	height: 48px;
 }
 
-.menu > ul > li > a {
+.menu>ul>li>a {
 	display: block;
 	background-color: #000;
 	color: var(--cor-primaria);
@@ -109,35 +110,59 @@
 	text-decoration: none;
 }
 
-.menu > ul > li > a:hover{
+.menu>ul>li>a:hover {
 	background-color: var(--cor-primaria);
 	color: #000;
 }
 
-.menu > ul > li > a > i{
+.menu>ul>li>a>i {
 	margin-right: 10px;
 }
-.menu > ul > li > a:hover > span{
+
+.menu>ul>li>a:hover>span {
 	color: #000;
 }
 
 
-#form-busca input{
+#form-busca input {
 	flex-grow: 1;
 	padding: 10px;
 	font-size: 2rem;
-	background-color: rgb(200,200,200);
+	background-color: transparent;
+	transition: 0.1s linear;
+	margin-right: 10px;
+	outline-width: 1px;
+	outline-style: solid;
+	outline-color: var(--cor-primaria);
 	border: none;
-	transition: background-color 0.3s linear;
-    margin-right: 10px;
+	background-image: url(../img/lupa.png);
+	background-repeat: no-repeat;
+	background-size: 48px 48px;
+	background-position: calc(100% - 8px) center;
+	color: var(--cor-primaria);
 }
 
-#form-busca input:focus{
-	outline: 3px solid var(--cor-primaria);
-	background-color: rgb(255,255,255) ;
+#form-busca input::-webkit-input-placeholder {/* Chrome/Opera/Safari */
+	color: var(--cor-primaria-transparente);
 }
 
-#form-busca button{
+#form-busca input::-moz-placeholder {/* Firefox 19+ */
+	color: var(--cor-primaria-transparente);
+}
+
+#form-busca input:-ms-input-placeholder {/* IE 10+ */
+	color: var(--cor-primaria-transparente);
+}
+
+#form-busca input:-moz-placeholder {/* Firefox 18- */
+	color: var(--cor-primaria-transparente);
+}
+
+#form-busca input:focus {
+	outline-width: 3px;
+}
+
+#form-busca button {
 	flex-grow: 0;
 	flex-shrink: 0;
 	width: 25%;
@@ -145,4 +170,19 @@
 	background-color: var(--cor-primaria);
 	color: white;
 	border: none;
+	overflow: hidden;
+}
+
+@media screen and (max-width:850px) {
+	#form-busca button {
+		display: none;
+	}
+
+	#form-busca input {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width:640px) {
+
 }
