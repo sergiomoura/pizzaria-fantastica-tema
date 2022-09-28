@@ -11,7 +11,6 @@
 }
 
 #logo {
-	transform: rotate(180deg);
 	width: 64px;
 	height: 64px;
 	display: flex;
@@ -21,7 +20,7 @@
 }
 
 #logo:hover {
-	transform: rotate(315deg);
+	transform: scale(1.2) rotate(10deg);
 }
 
 #logo img{
