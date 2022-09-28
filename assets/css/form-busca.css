@@ -74,7 +74,7 @@
 
 
 .menu:hover > ul{
-	height: 96px;
+	height: 160px;
 	transition: height 0.3s ease-out;
 }
 
@@ -88,8 +88,7 @@
 	right: -1px;
 	margin: 0;
 	padding: 0;
-	width: 200px;
-	background-color: aqua;
+	width: 260px;
 	height: 0;
 	overflow: hidden;
 }

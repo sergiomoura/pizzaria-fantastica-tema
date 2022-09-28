@@ -1,16 +1,17 @@
 #form-usuario {
 	width: 960px;
-	margin: 20vh auto;
+	margin: 120px auto 100px auto;
 	background-color: rgba(0,0,0,0.5);
 	color: #FFF;
 	padding: 50px;
 	display: flex;
-	justify-content: space-between;
+	gap: 20px;
 }
 
 #form-usuario>label{
 	width: calc((100% - 20px) / 2);
 	position: relative;
+	margin-bottom: 0;
 }
 
 #form-usuario>label img{
@@ -28,19 +29,8 @@
 
 #form-usuario .campos label {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
-
-#form-usuario label input {
-	display: block;
-	padding: 5px;
-	border: none;
-	margin-top: 5px;
-	font-size: 1.2rem;
-	width: 100%;
-}
-
-
 
 #form-usuario label input[type="file"]{
 	display: none;
@@ -59,15 +49,10 @@
 	cursor: pointer;
 	text-align: center;
 }
-
+ 
 #form-usuario button{
 	display: block;
 	font-size: 1rem;
-	background-color: var(--cor-primaria);
-	color: white;
-	border: none;
-	padding: 10px 20px;
 	width: 100%;
 	margin-top: auto;
-	cursor: pointer;
 }
