@@ -1,4 +1,4 @@
-div {
+main {
     width: 600px;
     padding: 20px;
     background-color: rgba(0,0,0,0.5);
@@ -8,22 +8,22 @@ div {
     margin-right: auto;
 }
 
-div table {
+main table {
     width: 100%;
     border-collapse: collapse;
 }
 
-div table td{
+main table td{
     border: solid 1px #333;
     padding: 10px;
 }
 
-div table td:first-child{
+main table td:first-child{
     width: 100px;
     padding: 1px;
 }
 
-div table img {
+main table img {
     width: 100%;
     display: block;
 }

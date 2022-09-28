@@ -13,16 +13,54 @@
 	<link rel="stylesheet" href="assets/css/pizza.css">
 	<link rel="stylesheet" href="assets/css/form-busca.css">
 	
+	<link rel="stylesheet" href="assets/css/form-busca.css">
 	<form action="/busca" method="get" id="form-busca">
+		
 		<a id="logo" href="index.html">
 			<img src="./assets/img/logo.svg" alt="Logo Pizzaria">
 		</a>
+		
 		<input type="text" name="q" placeholder="Qual pizza você procura?" autocomplete="off" value="">
+		
 		<button type="submit">Buscar</button>
-		<a id="carrinho" href="carrinho.html">
+		
+		<a class="form-button" href="carrinho.html">
 			<span>18</span>
 			<i class="fa-solid fa-cart-shopping fa-2xl"></i>
 		</a>
+
+		<div class="menu form-button">
+			<i class="fa-solid fa-user fa-2xl"></i>
+			<ul>
+				<li>
+					<a href="perfil.html">
+						<i class="fa-solid fa-user-pen"></i>
+						<span>Editar Perfil</span>
+					</a>
+				</li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Endereços</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <span>Formas de Pagamento</span>
+                    </a>
+                </li>
+
+				<li>
+					<a href="#">
+						<i class="fa-solid fa-right-from-bracket"></i>
+						<span>Logout</span>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
 	</form>
 	
 	<main>
