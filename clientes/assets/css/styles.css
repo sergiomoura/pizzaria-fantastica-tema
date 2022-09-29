@@ -1,0 +1,76 @@
+@import url(cores.css);
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html{
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	color: #FFF;
+}
+
+body::before{
+	content: "";
+	position: fixed;
+	top: 0;	left: 0;
+	width: 100%; height: 100%;
+	background-image: url(../img/bg.jpeg);
+	filter: brightness(0.3);
+	background-size: cover;
+	z-index: -1;
+}
+
+a {
+	color: #E0E0E0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #E0E0E0;
+	text-decoration: underline;
+}
+
+form label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+form label span {
+    font-size: 12px;
+    display: block;
+}
+
+form label select,
+form label input[type="text"],
+form label input[type="email"],
+form label input[type="password"] {
+    display: block;
+    padding: 8px;
+    margin-bottom: 5px;
+	width: 100%;
+	font-size: 18px;
+}
+
+button {
+    border: none;
+    background-color: var(--cor-principal);
+    color: #FFF;
+    padding: 10px 20px;
+	font-size: 18px;
+	background-color: var(--cor-primaria);
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table td {
+    padding: 5px;
+    border: 1px solid #333;
+}

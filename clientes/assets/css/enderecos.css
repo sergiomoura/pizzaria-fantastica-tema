@@ -27,13 +27,7 @@
 }
 
 #enderecos table{
-    border-collapse: collapse;
-    width: 100%;
-}
-
-#enderecos table td {
-    padding: 5px;
-    border: 1px solid #333;
+     width: 100%;
 }
 
 #enderecos table td:nth-child(2){

@@ -6,6 +6,10 @@
 	padding: 50px;
 }
 
+#form-login h1{
+	margin: 0 0 40px 0;
+}
+
 #form-login label {
 	display: block;
 	margin-bottom: 20px;
