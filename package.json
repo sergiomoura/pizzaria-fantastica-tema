@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sergiomoura/pizzaria-fantastica-tema/issues"
   },
-  "homepage": "https://github.com/sergiomoura/pizzaria-fantastica-tema#readme"
+  "homepage": "https://github.com/sergiomoura/pizzaria-fantastica-tema#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }
